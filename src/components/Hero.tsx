@@ -3,7 +3,7 @@ import Button from "../UI/Button";
 import heroImage from "/assets/imgs/hero-image.png";
 const Hero = () => {
     return (
-        <main id="Home" className="w-full flex lg:flex-row flex-col lg:items-center lg:justify-between md:justify-start gap-5 relative lg:max-h-[calc(100vh-100px)] h-svh lg:mt-0 mt-10">
+        <main id="home" className="w-full flex lg:flex-row flex-col lg:items-center lg:justify-between md:justify-start gap-20 relative lg:max-h-[calc(100vh-100px)] h-svh lg:mt-0 mt-10">
             <section className="flex flex-col gap-6 md:items-start items-center md:text-left text-center">
                 <div className="text-gray-200 font-bold lg:text-[84px] md:text-[70px] text-[45px] max-w-[661px] md:leading-[90px]">
                     Revolutionizing <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#0092ff] via-[#7447ff] via-10% to-[#0029a5] font-semibold'>Web3</span> Finance
@@ -14,8 +14,11 @@ const Hero = () => {
                     <Button variant="solid" className="md:!text-lg">Get Started</Button>
                     <Button className="flex items-center gap-2 md:!text-lg"><FaPlay className="size-3.5" />Watch video</Button>
                 </div>
+                <div className="absolute -left-30 size-70 bg-blue-500 opacity-40 blur-3xl -z-1" />
             </section>
-            <img src={heroImage} alt="hero-image" className="lg:w-3xl md:w-xl w-lg" />
+            <section className="xl:min-w-3xl lg:min-w-xl md:min-w-lg min-w-xs xl:w-3xl lg:w-xl md:w-lg w-xs mx-auto">
+            <img src={heroImage} alt="hero-image" loading="lazy" draggable={false} className="place-self-center" />
+            </section>
         </main>
     )
 }

@@ -27,7 +27,7 @@ const Navbar = () => {
         };
     }, []);
     return (
-        <header className='flex items-center justify-between w-full select-none sticky top-5 z-50 max-md:bg-slate-950/50 backdrop-blur-md lg:p-0 p-2 rounded-full'>
+        <header className='flex items-center justify-between w-full select-none sticky top-5 z-50 bg-slate-950/50 backdrop-blur-md lg:px-5 p-2 rounded-full'>
             <HashLink draggable={false} to='/#' className='flex items-center gap-4 justify-start'>
                 <img draggable={false} src="./assets/imgs/logo.png" alt="Transparent image" className="md:w-13 w-10 object-cover" loading='lazy' />
                 <h1 className='text-transparent bg-clip-text bg-gradient-to-r from-[#0092ff] via-[#7447ff] via-10% to-[#0029a5] md:text-2xl font-semibold'>MineVers</h1>
