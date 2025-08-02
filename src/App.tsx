@@ -1,3 +1,4 @@
+import { Route, Routes } from "react-router-dom"
 import About from "./components/About"
 import Faq from "./components/FAQ"
 import Footer from "./components/Footer"
@@ -8,19 +9,31 @@ import Navbar from "./components/Navbar"
 import Roadmap from "./components/Roadmap"
 import Staking from "./components/Staking"
 import Token from "./components/Token"
+import NotFound from "./components/NotFound"
 
 const App = () => {
   return (
     <>
-      <Layout>
+       <Layout>
         <Navbar />
-        <Hero />
-        <About />
-        <Token />
-        <Staking />
-        <Governance />
-        <Roadmap />
-        <Faq />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Hero />
+                <About />
+                <Token />
+                <Staking />
+                <Governance />
+                <Roadmap />
+                <Faq />
+              </>
+            }
+          />
+          {/* Catch-all route */}
+          <Route path="*" element={<NotFound />} />
+        </Routes>
       </Layout>
       <Footer />
     </>
