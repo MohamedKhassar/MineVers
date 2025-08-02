@@ -10,7 +10,6 @@ import Roadmap from "./components/Roadmap"
 import Staking from "./components/Staking"
 import Token from "./components/Token"
 import NotFound from "./components/NotFound"
-import Whitepaper from "./components/WhitePaper"
 
 const App = () => {
   return (
