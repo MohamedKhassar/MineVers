@@ -3,7 +3,7 @@ import Button from "../UI/Button";
 import heroImage from "/assets/imgs/hero-image.png";
 const Hero = () => {
     return (
-        <main id="home" className="w-full flex lg:flex-row flex-col lg:items-center lg:justify-between md:justify-start gap-20 relative lg:max-h-[calc(100vh-100px)] h-screen lg:mt-0 my-10">
+        <main id="home" className="w-full flex lg:flex-row flex-col lg:items-center lg:justify-between md:justify-start gap-20 relative lg:max-h-[calc(100vh-100px)] lg:h-screen md:h-dvh h-fit lg:mt-0 my-10">
             <section className="flex flex-col gap-6 md:items-start items-center md:text-left text-center">
                 <div className="text-gray-200 font-bold lg:text-[84px] md:text-[70px] text-[45px] max-w-[661px] md:leading-[90px]">
                     Revolutionizing <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#0092ff] via-[#7447ff] via-10% to-[#0029a5] font-semibold'>Web3</span> Finance
