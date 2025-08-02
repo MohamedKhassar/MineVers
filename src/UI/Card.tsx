@@ -1,4 +1,3 @@
-import React from 'react'
 import type { FeatureItem } from '../lib/types'
 
 const Card = ({ Icon, ...feature }: FeatureItem) => {
