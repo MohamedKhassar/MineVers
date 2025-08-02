@@ -34,7 +34,7 @@ const App = () => {
             }
           />
           {/* Catch-all route */}
-            <Route path="/whitepaper" element={<Whitepaper />} />
+            {/* <Route path="/whitepaper" element={<Whitepaper />} /> */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>

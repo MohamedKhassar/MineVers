@@ -7,7 +7,7 @@ export const navItems = [
     { title: "Governance", path: "/#governance" },
     { title: "Roadmap", path: "/#roadmap" },
     { title: "FAQ", path: "/#faq" },
-    { title: "WhitePaper", path: "whitepaper" },
+    // { title: "WhitePaper", path: "whitepaper" },
   ];
 
 
@@ -51,7 +51,7 @@ export const footerContent = [
       { title: "Home", path: "/#home" },
       { title: "About", path: "/#about" },
       { title: "Token", path: "/#token" },
-      { title: "WhitePaper", path: "/whitepaper" },
+      { title: "Staking", path: "/#staking" },
     ],
   },
   {
