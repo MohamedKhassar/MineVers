@@ -43,3 +43,31 @@ export const features = [
   },
 ];
 
+export const footerContent = [
+  {
+    title: "Quick links",
+    links: [
+      { title: "Home", path: "/" },
+      { title: "Features", path: "/" },
+      { title: "Community", path: "/" },
+      { title: "Support", path: "/" },
+    ],
+  },
+  {
+    title: "Help",
+    links: [
+      { title: "Help Center", path: "/" },
+      { title: "FAQ", path: "/" },
+      { title: "Forum", path: "/" },
+    ],
+  },
+  {
+    title: "Social Media",
+    links: [
+      { title: "Facebook", path: "/" },
+      { title: "Instagram", path: "/" },
+      { title: "Linkedin", path: "/" },
+    ],
+  },
+];
+

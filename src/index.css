@@ -3,7 +3,7 @@
 
 body {
   font-family: "Alexandria", sans-serif;
-    @apply bg-slate-950 text-white sm:mx-auto mx-5 py-5 xl:max-w-420 lg:max-w-220 md:max-w-3xl max-w-md overflow-x-hidden;
+    @apply bg-slate-950 text-white;
 }
 
 html{
