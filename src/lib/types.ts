@@ -14,6 +14,8 @@ export interface FeatureItem {
 }
 
 export interface SectionHeaderProps {
-  title: string;
+  title?: string;
   description: string;
+  white?:string
+  color?: string;
 }
