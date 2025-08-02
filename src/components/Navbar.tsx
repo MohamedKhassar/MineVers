@@ -40,9 +40,9 @@ const Navbar = () => {
                 ))}
             </nav>
             <section className="flex items-center gap-5 justify-end max-md:hidden">
-                <HashLink to="/#contact-us" className="text-white">
+                {/* <HashLink to="/#contact-us" className="text-white">
                     <Button>Contact Us</Button>
-                </HashLink>
+                </HashLink> */}
                 {/* <Button variant='solid'>
                     get started
                 </Button> */}

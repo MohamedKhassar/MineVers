@@ -57,7 +57,6 @@ export const footerContent = [
   {
     title: "Help",
     links: [
-      { title: "Help Center", path: "/#contact-us" },
       { title: "FAQ", path: "/#faq" },
     ],
   },
