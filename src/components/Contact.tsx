@@ -3,8 +3,6 @@ import type { Errors, FormData } from "../lib/types";
 import SectionHeader from "../UI/SectionHeader";
 import Button from "../UI/Button";
 
-
-
 const ContactSection = () => {
   const [formData, setFormData] = useState<FormData>({
     name: "",
@@ -13,6 +11,7 @@ const ContactSection = () => {
   });
 
   const [errors, setErrors] = useState<Errors>({});
+  const [submitted, setSubmitted] = useState(false);
 
   const validate = (): Errors => {
     const newErrors: Errors = {};
@@ -39,28 +38,38 @@ const ContactSection = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: FormEvent) => {
-    e.preventDefault();
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     const validationErrors = validate();
     setErrors(validationErrors);
 
-    if (Object.keys(validationErrors).length === 0) {
-      alert("Message sent!");
-      setFormData({ name: "", email: "", message: "" });
+    if (Object.keys(validationErrors).length > 0) {
+      e.preventDefault(); // prevent form submission if validation fails
+      return;
     }
+
+    setSubmitted(true); // optionally show a success message
+    // Allow Getform to handle the form submission
   };
 
   return (
-    <section id="contact-us"  className="lg:max-h-[calc(100vh-100px)] lg:h-screen md:h-dvh h-fit">
-        <SectionHeader
-            description="Have questions or feedback? Reach out to us anytime. We’re here to help!"
-            color=" Contact us"
-        />
+    <section id="contact-us" className="lg:max-h-[calc(100vh-100px)] lg:h-screen md:h-dvh h-fit">
+      <SectionHeader
+        description="Have questions or feedback? Reach out to us anytime. We’re here to help!"
+        color=" Contact us"
+      />
       <div className="mx-auto mt-15 max-w-7xl">
-        <div
-          className="space-y-6"
-        >
-          <form onSubmit={handleSubmit} className="space-y-5">
+        <div className="space-y-6">
+          {submitted && (
+            <p className="text-green-500 font-medium text-center mb-6">
+              Thank you! Your message has been sent.
+            </p>
+          )}
+          <form
+            onSubmit={handleSubmit}
+            action="https://getform.io/f/your-form-endpoint" // ✅ Replace with your Getform endpoint
+            method="POST"
+            className="space-y-5"
+          >
             <div className="space-y-2">
               <input
                 type="text"
@@ -69,9 +78,11 @@ const ContactSection = () => {
                 value={formData.name}
                 onChange={handleChange}
                 className="w-full border border-violet-800 px-4 py-3 rounded-md outline-none text-white"
+                required
               />
               {errors.name && <p className="text-red-500 text-sm font-medium">{errors.name}</p>}
             </div>
+
             <div className="space-y-2">
               <input
                 type="email"
@@ -80,9 +91,11 @@ const ContactSection = () => {
                 value={formData.email}
                 onChange={handleChange}
                 className="w-full border border-violet-800 px-4 py-3 rounded-md outline-none text-white"
+                required
               />
               {errors.email && <p className="text-red-500 text-sm font-medium">{errors.email}</p>}
             </div>
+
             <div className="space-y-2">
               <textarea
                 name="message"
@@ -91,11 +104,15 @@ const ContactSection = () => {
                 onChange={handleChange}
                 rows={5}
                 className="w-full border border-violet-800 px-4 py-3 rounded-md outline-none text-white resize-none"
+                required
               />
-              {errors.message && <p className="text-red-500 text-sm font-medium">{errors.message}</p>}
+              {errors.message && (
+                <p className="text-red-500 text-sm font-medium">{errors.message}</p>
+              )}
             </div>
+
             <Button variant="solid" className="!text-base">
-                Send Message
+              Send Message
             </Button>
           </form>
         </div>

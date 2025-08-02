@@ -12,13 +12,6 @@ const Whitepaper = () => {
           and more. This whitepaper provides a transparent and comprehensive overview of how
           our project works and the future we are building.
         </p>
-        <a
-          href="/docs/minevers-whitepaper.pdf" // <-- Replace with actual path
-          download
-          className="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-md font-medium transition"
-        >
-          Download Whitepaper (PDF)
-        </a>
       </div>
 
       {/* Optional sections */}
