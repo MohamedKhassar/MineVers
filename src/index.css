@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap");
+@import "tailwindcss";
+
+body {
+  font-family: "Alexandria", sans-serif;
+    @apply bg-slate-950 text-white sm:mx-auto mx-5 py-5 xl:max-w-420 lg:max-w-220 md:max-w-3xl max-w-md;
+}
+
+html{
+    @apply scroll-smooth;
+}
+
+[id]{
+    @apply scroll-mt-30;
+}
+
+::-webkit-scrollbar-thumb{
+    @apply bg-gradient-to-b from-violet-900 to-blue-950 rounded-md;
+}
+
+
+::-webkit-scrollbar{
+    @apply w-1;
+}
+::-webkit-scrollbar-button{
+    @apply hidden;
+}
