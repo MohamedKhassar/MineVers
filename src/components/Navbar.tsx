@@ -43,9 +43,9 @@ const Navbar = () => {
                 <HashLink to="/#contact-us" className="text-white">
                     <Button>Contact Us</Button>
                 </HashLink>
-                <Button variant='solid'>
+                {/* <Button variant='solid'>
                     get started
-                </Button>
+                </Button> */}
             </section>
             <section ref={navRef} className='relative lg:hidden'>
                 <Button onClick={toggleMenu} variant='solid' className="lg:hidden text-white !px-2.5">

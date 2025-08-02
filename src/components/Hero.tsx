@@ -1,5 +1,5 @@
-import { FaPlay } from "react-icons/fa";
-import Button from "../UI/Button";
+// import { FaPlay } from "react-icons/fa";
+// import Button from "../UI/Button";
 import heroImage from "/assets/imgs/hero-image.png";
 const Hero = () => {
     return (
@@ -10,10 +10,10 @@ const Hero = () => {
                 </div>
                 <p className="text-gray-300 md:max-w-3xl max-w-sm leading-7 md:text-base text-sm">
                     MineVers is a powered protocol redefining the future of cryptocurrency mining through real-world asset (RWA) tokenization. Our mission is to make mining accessible, decentralized, and profitable for everyone—without the need to own or operate physical hardware.                </p>
-                <div className="flex items-center gap-5">
+                {/* <div className="flex items-center gap-5">
                     <Button variant="solid" className="md:!text-lg">Get Started</Button>
                     <Button className="flex items-center gap-2 md:!text-lg"><FaPlay className="size-3.5" />Watch video</Button>
-                </div>
+                </div> */}
                 <div className="absolute -left-30 size-70 bg-blue-500 opacity-40 blur-3xl -z-1" />
             </section>
             <section className="xl:min-w-3xl lg:min-w-xl md:min-w-lg min-w-xs xl:w-3xl lg:w-xl md:w-lg w-xs mx-auto">

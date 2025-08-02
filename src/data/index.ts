@@ -1,12 +1,13 @@
 import { FaMicrochip, FaWallet, FaUsers, FaGlobe, FaBolt } from "react-icons/fa";
 export const navItems = [
-    { title: "Home", path: "#home" },
-    { title: "About", path: "#about" },
-    { title: "Token", path: "#token" },
-    { title: "Staking", path: "#staking" },
-    { title: "Governance", path: "#governance" },
-    { title: "Roadmap", path: "#roadmap" },
-    { title: "FAQ", path: "#faq" },
+    { title: "Home", path: "/#home" },
+    { title: "About", path: "/#about" },
+    { title: "Token", path: "/#token" },
+    { title: "Staking", path: "/#staking" },
+    { title: "Governance", path: "/#governance" },
+    { title: "Roadmap", path: "/#roadmap" },
+    { title: "FAQ", path: "/#faq" },
+    { title: "WhitePaper", path: "whitepaper" },
   ];
 
 
@@ -47,26 +48,24 @@ export const footerContent = [
   {
     title: "Quick links",
     links: [
-      { title: "Home", path: "/" },
-      { title: "Features", path: "/" },
-      { title: "Community", path: "/" },
-      { title: "Support", path: "/" },
+      { title: "Home", path: "/#home" },
+      { title: "About", path: "/#about" },
+      { title: "Token", path: "/#token" },
+      { title: "WhitePaper", path: "/whitepaper" },
     ],
   },
   {
     title: "Help",
     links: [
-      { title: "Help Center", path: "/" },
-      { title: "FAQ", path: "/" },
-      { title: "Forum", path: "/" },
+      { title: "Help Center", path: "/#contact-us" },
+      { title: "FAQ", path: "/#faq" },
     ],
   },
   {
     title: "Social Media",
     links: [
-      { title: "Facebook", path: "/" },
-      { title: "Instagram", path: "/" },
-      { title: "Linkedin", path: "/" },
+      { title: "X (Twitter)", path: "https://x.com/MINEVERS01?t=YbhDZb3CcX9esRxm43Ss-A&s=09" },
+      { title: "Telegram", path: "https://t.me/+EEhbAjvm0KxjMTBk" },
     ],
   },
 ];

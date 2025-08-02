@@ -19,3 +19,15 @@ export interface SectionHeaderProps {
   white?:string
   color?: string;
 }
+
+export interface FormData {
+  name: string;
+  email: string;
+  message: string;
+}
+
+export interface Errors {
+  name?: string;
+  email?: string;
+  message?: string;
+}
