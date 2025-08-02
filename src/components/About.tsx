@@ -6,7 +6,7 @@ const About = () => {
     return (
         <main
             id="about"
-            className="mx-auto">
+            className="lg:max-h-[calc(100vh-100px)] h-screen">
             <SectionHeader
                 title={"about MineVers"}
                 description={" We are on a mission to empower businesses with transformative AI technology. Our team of experts combines industry‑leading research with innovative algorithms to deliver a platform that adapts to your unique needs. Join us and lead the digital revolution in your industry."}
