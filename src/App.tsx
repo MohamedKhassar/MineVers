@@ -10,12 +10,16 @@ import Roadmap from "./components/Roadmap"
 import Staking from "./components/Staking"
 import Token from "./components/Token"
 import NotFound from "./components/NotFound"
+import WhitepaperPage from "./components/WhitePaper"
+import ContactSection from "./components/Contact"
+import SmallNavbar from "./components/SmallNavbar"
 
 const App = () => {
   return (
     <>
        <Layout>
         <Navbar />
+        <SmallNavbar />
         <Routes>
           <Route
             path="/"
@@ -28,12 +32,12 @@ const App = () => {
                 <Governance />
                 <Roadmap />
                 <Faq />
-                {/* <ContactSection /> */}
+                <ContactSection  />
               </>
             }
           />
           {/* Catch-all route */}
-            {/* <Route path="/whitepaper" element={<Whitepaper />} /> */}
+            <Route path="/whitepaper" element={<WhitepaperPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
